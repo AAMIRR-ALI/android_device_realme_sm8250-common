@@ -393,6 +393,9 @@ PRODUCT_PACKAGES += \
     libxml2
 
 # Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
 
@@ -420,6 +423,9 @@ PRODUCT_COPY_FILES += \
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
+    android.hardware.sensors@2.0-service.multihal \
+    libsensorndkbridge \
+    sensors.oplus
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
