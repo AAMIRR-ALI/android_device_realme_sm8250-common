@@ -188,6 +188,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
+    libutilscallstack.vendor \
     libqdMetaData \
     libsdmcore \
     libsdmutils \
@@ -387,6 +388,9 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor:64 \
+    libjsoncpp.vendor \
+    libsqlite.vendor:64 \
     libjson \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
@@ -416,6 +420,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
 
 PRODUCT_PACKAGES += \
+    libdumpstateutil.vendor:64 \
     libsensorndkbridge \
     sensors.oplus
 
@@ -456,11 +461,7 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    telephony-ext \
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
+    telephony-ext 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
