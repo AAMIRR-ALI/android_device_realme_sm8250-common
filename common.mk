@@ -164,6 +164,7 @@ PRODUCT_PACKAGES += \
     memtrack.kona
 
 PRODUCT_PACKAGES += \
+    libutilscallstack.vendor \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     libqdMetaData \
@@ -375,6 +376,9 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor:64 \
+    libjsoncpp.vendor \
+    libsqlite.vendor:64 \
     libjson \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
@@ -397,6 +401,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
 
 PRODUCT_PACKAGES += \
+    libdumpstateutil.vendor:64 \
     libsensorndkbridge \
     sensors.oplus
 
