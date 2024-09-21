@@ -179,7 +179,8 @@ TARGET_ENABLE_BLUR := true
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm-service.clearkey \
+    libcrypto-v33
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -202,7 +203,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss@2.1-impl-qti \
-    android.hardware.gnss@2.1-service-qti
+    android.hardware.gnss@2.1-service-qti \
+    libloc_net_iface.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_ODM)/etc/gps.conf
@@ -267,7 +269,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libcodec2_vndk.vendor \
-    libcodec2_hidl@1.0.vendor
+    libcodec2_hidl@1.0.vendor \
+    libstagefright_softomx_plugin.vendor
 
 # Media
 GENERIC_ODM_IMAGE := true
@@ -352,7 +355,9 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.oplus-libperfmgr
+    android.hardware.power-service-qti \
+    android.hardware.power@1.2.vendor \
+    vendor.qti.hardware.perf@2.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -361,6 +366,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     libprotobuf-cpp-lite-3.9.1.so\
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
     libprotobuf-cpp-full-3.9.1-vendorcompat
 
 # QMI
