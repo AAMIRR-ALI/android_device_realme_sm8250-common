@@ -110,7 +110,7 @@ void vendor_load_properties() {
     search_variant(variants);
     
     // Misc
-    property_override("ro.matrixx.chipset", "Snapdragon® 865 5G");
-    property_override("ro.matrixx.device", "bladerunner");
-    property_override("ro.matrixx.maintainer", "AAMIRR ALI");
+    property_override("ro.rising.chipset", "Snapdragon® 865 5G");
+    property_override("ro.rising.device", "bladerunner");
+    property_override("ro.rising.maintainer", "AAMIRR ALI");
 }
