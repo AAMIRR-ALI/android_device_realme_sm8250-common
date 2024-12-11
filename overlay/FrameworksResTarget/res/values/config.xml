@@ -58,5 +58,16 @@
     
         <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
+    <!-- Udfps vendor code -->
+    <integer name="config_udfpsVendorCode">0</integer>
+    <!-- Whether devices suports in-display fingerprint when screen is off -->
+    <bool name="config_supportsScreenOffUdfps">true</bool>
+    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/devices/virtual/oplus_chg/battery/voocchg_ing</string>
+    <!-- Expected value from fast charging status file  -->
+    <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
+    <!-- Whether device has dash charging support -->
+    <bool name="config_hasVoocCharger">true</bool>
+    <bool name="config_proximityCheckOnFpsUnlock">true</bool>
 
 </resources>
