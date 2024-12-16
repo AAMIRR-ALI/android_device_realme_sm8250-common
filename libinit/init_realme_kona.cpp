@@ -112,5 +112,5 @@ void vendor_load_properties() {
     // Misc
     property_override("ro.rising.chipset", "Snapdragon® 865 5G");
     property_override("ro.rising.device", "bladerunner");
-    property_override("ro.rising.maintainer", "AAMIRR ALI");
+    property_override("ro.rising.maintainer", "Y_ezzdan");
 }
