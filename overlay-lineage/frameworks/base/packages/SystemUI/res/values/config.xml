@@ -25,7 +25,7 @@
     <integer name="config_currentInfoDivider" translatable="false">1</integer>
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
-    <integer name="config_keyguardMaxRefreshRate">60</integer>
+    <integer name="config_keyguardMaxRefreshRate">90</integer>
 
     <!-- Whether show refresh rate QS tile -->
     <bool name="config_showRefreshRateQsTile">true</bool>
@@ -34,4 +34,14 @@
     <integer name="config_aodMaxRefreshRate">60</integer>
     <!-- Pixel pitch of the device. um/px -->
     <item name="pixel_pitch" format="float" type="dimen">63.1</item>
+    
+    <!-- The default tiles to display in QuickSettings -->
+    <string name="quick_settings_tiles_default" translatable="false">
+        cell,bt,flashlight,dnd,alarm,airplane,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle,custom(com.android.permissioncontroller/.permission.service.v33.SafetyCenterQsTileService)
+    </string>
+    
+        <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
+    <string name="quick_settings_tiles_stock" translatable="false">
+        internet,wifi,cell,bt,flashlight,dnd,alarm,airplane,nfc,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle,location,hotspot,inversion,saver,dark,work,night,reverse,reduce_brightness,qr_code_scanner,onehanded,color_correction,dream,font_scaling,record_issue,hearing_devices,ambient_display,aod,caffeine,heads_up,powershare,profiles,reading_mode,sync,usb_tether,vpn,sound,dataswitch,musictile,refresh_rate,weather,sleep_mode,volume_control
+    </string>
 </resources>
