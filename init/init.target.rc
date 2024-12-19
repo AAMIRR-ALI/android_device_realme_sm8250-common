@@ -132,6 +132,10 @@ on early-boot
 	chmod 0666 /sys/class/leds/vibrator/index
 	chmod 0660 /sys/class/leds/vibrator/rtp
 	chmod 0666 /dev/awinic_haptic
+
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
 	
 on boot
     write /dev/cpuset/audio-app/cpus 1-2
