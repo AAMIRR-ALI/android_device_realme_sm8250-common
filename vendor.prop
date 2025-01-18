@@ -164,7 +164,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
-debug.sf.disable_backpressure=1
 ro.surface_flinger.wcg_composition_dataspace=143261696
 vendor.opengles.version=196610
 debug.sf.enable_advanced_sf_phase_offset=1
