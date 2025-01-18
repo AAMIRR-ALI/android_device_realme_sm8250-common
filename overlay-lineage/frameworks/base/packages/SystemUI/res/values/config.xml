@@ -32,8 +32,6 @@
     
     <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
     <integer name="config_aodMaxRefreshRate">60</integer>
-    <!-- Pixel pitch of the device. um/px -->
-    <item name="pixel_pitch" format="float" type="dimen">63.1</item>
     
     <!-- The default tiles to display in QuickSettings -->
     <string name="quick_settings_tiles_default" translatable="false">
