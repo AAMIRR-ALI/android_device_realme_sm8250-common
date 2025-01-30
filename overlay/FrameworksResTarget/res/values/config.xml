@@ -27,33 +27,21 @@
          states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
-    <!-- Default files to pin via Pinner Service -->
-    <string-array name="config_defaultPinnerServiceFiles">
-        <item>/system/framework/arm64/boot-framework.oat</item>
-        <item>/system/framework/arm/boot-framework.oat</item>
-        <item>/apex/com.android.art/javalib/arm64/boot-core-libart.oat</item>
-        <item>/apex/com.android.art/javalib/arm/boot-core-libart.oat</item>
-        <item>/apex/com.android.art/javalib/arm64/boot-okhttp.oat</item>
-        <item>/apex/com.android.art/javalib/arm/boot-okhttp.oat</item>
-        <item>/apex/com.android.art/javalib/arm64/boot.vdex</item>
-        <item>/apex/com.android.art/javalib/arm/boot.vdex</item>
-        <item>/apex/com.android.art/javalib/arm64/boot-core-libart.vdex</item>
-        <item>/apex/com.android.art/javalib/arm/boot-core-libart.vdex</item>
-        <item>/apex/com.android.art/javalib/arm64/boot-core-libart.art</item>
-        <item>/apex/com.android.art/javalib/arm/boot-core-libart.art</item>
-        <item>/system/framework/framework-res.apk</item>
-        <item>/system/lib64/libhwui.so</item>
-        <item>/system/lib/libhwui.so</item>
-        <item>/system/framework/boot-framework.vdex</item>
-        <item>/system/framework/oat/arm64/services.vdex</item>
-        <item>/system/framework/oat/arm64/services.odex</item>
-        <item>/apex/com.android.art/javalib/arm64/boot.oat</item>
-        <item>/apex/com.android.art/javalib/arm/boot.oat</item>
-        <item>/system/framework/telephony-common.jar</item>
-        <item>/system/framework/arm64/boot-telephony-common.art</item>
-        <item>/system/lib64/libsurfaceflinger.so</item>
-        <item>/apex/com.android.art/javalib/core-oj.jar</item>
-        <item>/apex/com.android.art/javalib/core-libart.jar</item>
+    <!-- Default list of files pinned by the Pinner Service -->
+    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
+        <item>"/system/framework/framework.jar"</item>
+        <item>"/system/framework/services.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
+        <item>"/system/bin/surfaceflinger"</item>
+        <item>"/system/lib64/libRScpp.so"</item>
+        <item>"/system/lib64/libRS.so"</item>
+        <item>"/system/lib64/libRS_internal.so"</item>
+        <item>"/system/lib64/libbcinfo.so"</item>
+        <item>"/system/lib64/libRSDriver.so"</item>
+        <item>"/system/lib64/libRSCpuRef.so"</item>
+        <item>"/system/lib64/libblas.so"</item>
     </string-array>
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
