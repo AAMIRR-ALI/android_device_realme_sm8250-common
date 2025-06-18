@@ -118,8 +118,6 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libstdc++.vendor
 
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V4
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -316,13 +314,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 
-# overlay-lineage    
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
 
-# OPlusExtras
-PRODUCT_PACKAGES += \
-    OPlusExtras
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
