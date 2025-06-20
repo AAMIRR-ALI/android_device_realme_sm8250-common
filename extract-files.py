@@ -18,9 +18,9 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/oneplus/sm8350-common',
+    'device/realme/sm8250-common',
     'hardware/oplus',
-    'hardware/qcom-caf/sm8350',
+    'hardware/qcom-caf/sm8250',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/commonsys/display',
@@ -78,8 +78,8 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm8350-common',
-    'oneplus',
+    'sm8250-common',
+    'realme',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
